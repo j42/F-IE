@@ -4,11 +4,11 @@
 
 	var iframe = '//j42.github.io/F-IE',
 
-		isIE = function detectIE() {
+		isIE = function () {
 			return (window.navigator.userAgent.indexOf('MSIE') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1);
 		},
 
-		onload = function contentLoaded(win, fn) {
+		onload = function (win, fn) {
 
 			var done = false, top = true,
 
@@ -42,7 +42,7 @@
 
 		},
 
-		inject = function(html) {
+		inject = function (html) {
 			var frame = document.createElement('iframe');
 				frame.style.position = 'fixed';
 				frame.style.zIndex = '999999';
