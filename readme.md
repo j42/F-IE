@@ -1,4 +1,4 @@
-# F-IE (Fun with Internet Explorer)
+# F-IE (Fun...) with Internet Explorer
 
 Let's be proactive about the quality of the browsers we develop for.  Better technologies and standards adherence not only makes our lives simpler, it raises the bar of new and exciting tools at our disposal.
 
