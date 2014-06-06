@@ -28,7 +28,7 @@ It's never been easier to be proactive!  Just include the following script at th
 
 	gulp build
 
-	Create assets in `./build/` directory, and concatenate/minify everything to `./index.html`
+Creates assets in `./build/` directory, and concatenate/minify everything to `./index.html`
 
 #### Build Dependencies
 
