@@ -4,7 +4,9 @@
 
 Let's be proactive about the quality of the browsers we develop for.  Better technologies and standards adherence not only makes our lives simpler, it raises the bar of new and exciting tools at our disposal.
 
-It's never been easier to be proactive!  Just include the following script at the bottom of any HTML file to automatically load the splash when IE is detected:
+It's never been easier to be proactive!  Just include the following script at the bottom of any HTML file to automatically load the splash when IE is detected.
+
+**This is all you need to include in your page:**
 
 ```javascript
 ;(function() {
