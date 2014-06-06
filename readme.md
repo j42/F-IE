@@ -9,8 +9,6 @@ It's never been easier to be proactive!  Just include the following script at th
 
 ## Build Dependencies
 
-node, npm, gulp, gulp-file-insert, gulp-concat, gulp-uglify, gulp-min-css, gulp-base64, utf8, gulp-minify-html, gulp-replace
-
 	sudo apt-get install node
 	sudo npm install -g gulp
 	npm install --save-dev gulp-file-insert gulp-concat gulp-uglify gulp-minify-css gulp-base64 gulp-minify-html gulp-replace utf8

@@ -10,8 +10,6 @@
         <meta name="description" content="Please support the sanity of developers everywhere, in the interest of making your own experience better.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/main.css">
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
         <!--[if lt IE 8]>
            <style type="text/css">
             .col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.input-group,.row,.content{box-sizing:border-box;behavior:url(/js/boxsizing.htc)}
@@ -40,7 +38,12 @@
             }
           </style>
         <![endif]-->
-        <link rel="stylesheet" href="css/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:100,300,700" rel="stylesheet" type="text/css">
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <style type="text/css">
+            {{CSS}}
+        </style>
+        
     </head>
     <body>
 
@@ -49,7 +52,7 @@
 
             <!-- Splash -->
             <div class="splash animated fadeInUp">
-                <h3><strong>It's 2014</strong><br>Don't compromise <span class="label label-primary">speed <i class="fa fa-bolt"></i></span> <span class="label label-primary">security <i class="fa fa-lock"></i></span> or <span class="label label-primary">features <i class="fa fa-star"></i></span></h3>
+                <h3><strong>It's 2014</strong><br>Don't compromise on <span class="label label-primary">speed <i class="fa fa-bolt"></i></span> <span class="label label-primary">security <i class="fa fa-lock"></i></span> or <span class="label label-primary">features <i class="fa fa-star"></i></span></h3>
                 <h2>Download a <em>real</em> browser and use the internet the way it was intended:</h2>
                 <div class="browsers row">
                     <div class="col-sm-4 animated fadeInUp">
@@ -154,45 +157,13 @@
             </div>
         </div>
 
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Oswald:100,300,700" rel="stylesheet" type="text/css">
-        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <script>
-            // Avoid `console` errors in browsers that lack a console.
-            (function() {
-                var method;
-                var noop = function () {};
-                var methods = [
-                    'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-                    'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-                    'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-                    'timeStamp', 'trace', 'warn'
-                ];
-                var length = methods.length;
-                var console = (window.console = window.console || {});
-
-                while (length--) {
-                    method = methods[length];
-
-                    // Only stub undefined methods.
-                    if (!console[method]) {
-                        console[method] = noop;
-                    }
-                }
-            }());
+        
+        <script type="text/javascript">
+            {{JS}}
         </script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-51488035-2');ga('send','pageview');
-        </script>
     </body>
 </html>

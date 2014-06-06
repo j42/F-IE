@@ -73,7 +73,7 @@ gulp.task('js', function() {
 /* Build HTML */
 
 gulp.task('html', ['css','js'], function() {
-	return gulp.src('./index.html')
+	return gulp.src('./stub.html')
 		.pipe(concat('a.html'))
 		.pipe(gfi({
 			'{{CSS}}': './build/a.min.css',
@@ -89,8 +89,8 @@ gulp.task('compile', ['css','js','html'], function() {
 	return gulp.src('./build/a.html')
 		.pipe(html())
 		.pipe(replace(/'/g, "\""))
-		.pipe(concat('inject'))
-		.pipe(gulp.dest('./build/'));
+		.pipe(concat('index.html'))
+		.pipe(gulp.dest('./'));
 });
 
 
@@ -99,8 +99,8 @@ gulp.task('compile', ['css','js','html'], function() {
 gulp.task('load', ['compile'], function() {
 	return gulp.src('./loader.js')
 		.pipe(concat('load.js'))
-		.pipe(gfi({
+		/*.pipe(gfi({
 			'{{COMPILED}}': './build/inject'
-		}))
+		}))*/
 		.pipe(gulp.dest('./build/'))
 });
