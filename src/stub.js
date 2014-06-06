@@ -4,6 +4,10 @@
 
 	var iframe = '//j42.github.io/F-IE',
 
+		isIE = function detectIE() {
+			return (window.navigator.userAgent.indexOf('MSIE') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1);
+		},
+
 		onload = function contentLoaded(win, fn) {
 
 			var done = false, top = true,
@@ -54,8 +58,10 @@
 
 	/* Init */
 
-	onload(window, function() {
-		inject(iframe);
-	});
+	if (isIE()) {
+		onload(window, function() {
+			inject(iframe);
+		});
+	}
 
 })(window, undefined);

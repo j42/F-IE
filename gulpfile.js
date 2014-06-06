@@ -97,10 +97,8 @@ gulp.task('compile', ['css','js','html'], function() {
 /* Stage Loader */
 
 gulp.task('load', ['compile'], function() {
-	return gulp.src('./loader.js')
+	return gulp.src('./src/stub.js')
 		.pipe(concat('load.js'))
-		/*.pipe(gfi({
-			'{{COMPILED}}': './build/inject'
-		}))*/
+		.pipe(uglify({ mangle: false }))
 		.pipe(gulp.dest('./build/'))
 });
