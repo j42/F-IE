@@ -2,7 +2,7 @@
 
 	'use strict';
 
-	var iframe = 'http://j42.github.io/F-IE',
+	var iframe = '//j42.github.io/F-IE',
 
 		onload = function contentLoaded(win, fn) {
 
