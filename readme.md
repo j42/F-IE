@@ -1,8 +1,10 @@
 # F-IE (Fun...) with Internet Explorer
 
+[DEMO HERE](https://j42.github.io/F-IE)
+
 Let's be proactive about the quality of the browsers we develop for.  Better technologies and standards adherence not only makes our lives simpler, it raises the bar of new and exciting tools at our disposal.
 
-It's never been easier to be proactive!  Just include the following script at the bottom of any HTML file to help move us toward the future:
+It's never been easier to be proactive!  Just include the following script at the bottom of any HTML file to automatically load the splash when IE is detected:
 
 	;(function() {
 		var script = document.createElement('script');
@@ -13,7 +15,20 @@ It's never been easier to be proactive!  Just include the following script at th
 	}());
 
 
-## Build Dependencies
+## Coming Soon
+
+- CDN integration
+- Configurations & improved detection
+- Fixes on older IE versions (though perhaps the errors lend credence to the argument)
+
+
+## Compiling a Build
+
+	gulp build
+
+	Create assets in `./build/` directory, and concatenate/minify everything to `./index.html`
+
+#### Build Dependencies
 
 	sudo apt-get install node
 	sudo npm install -g gulp
