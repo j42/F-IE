@@ -73,7 +73,7 @@ gulp.task('js', function() {
 /* Build HTML */
 
 gulp.task('html', ['css','js'], function() {
-	return gulp.src('./stub.html')
+	return gulp.src('./src/stub.html')
 		.pipe(concat('a.html'))
 		.pipe(gfi({
 			'{{CSS}}': './build/a.min.css',
