@@ -4,7 +4,13 @@ Let's be proactive about the quality of the browsers we develop for.  Better tec
 
 It's never been easier to be proactive!  Just include the following script at the bottom of any HTML file to help move us toward the future:
 
-	//cloudflare.link
+	;(function() {
+		var script = document.createElement('script');
+		script.setAttribute('id','j42-upgradetoday');
+		script.setAttribute('type','text/javascript');
+		script.setAttribute('src','//j42.github.io/F-IE/src/stub.js');
+		document.getElementsByTagName('head')[0].appendChild(script);
+	}());
 
 
 ## Build Dependencies
