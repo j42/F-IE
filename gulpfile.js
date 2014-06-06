@@ -88,7 +88,7 @@ gulp.task('html', ['css','js'], function() {
 gulp.task('compile', ['css','js','html'], function() {
 	return gulp.src('./build/a.html')
 		.pipe(html())
-		.pipe(replace(/'/g, "\""))
+		/*.pipe(replace(/'/g, "\'"))*/
 		.pipe(concat('index.html'))
 		.pipe(gulp.dest('./'));
 });
